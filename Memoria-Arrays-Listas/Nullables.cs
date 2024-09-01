@@ -43,6 +43,13 @@ namespace Nullables {
             else {
                 Console.WriteLine("Y is null!");
             }
+
+            //Operador de coalescência nula
+
+            int? n1 = null;
+            int n2 = n1 ?? 4;
+            //É uma forma de dizer: se n1 tiver valor, n2 recebe o valor dele, se não, recebe 4
+            Console.WriteLine(n2);
         }
 
     }
